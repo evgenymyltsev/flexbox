@@ -1,0 +1,111 @@
+@mixin flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body{
+  background: #fefefe; 
+  margin: 0; 
+  padding: 0;
+  font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+  color: #272727;
+}
+img{
+  margin: 0; 
+  padding: 0; 
+  vertical-align: middle; 
+  border: none;
+}
+.main{
+  margin: 20px; 
+  border: 1px solid #ccc; 
+  padding: 20px; 
+  background: #fff; 
+  border-radius: 3px;
+}
+.bl{
+  padding: 10px; 
+  border:1px solid #ddd; 
+  background: #fefefe; 
+  border-radius: 3px;
+  margin: 20px;
+}
+
+.main {
+  @include flex;
+  max-width: 1000px;
+  height: 500px;
+  margin: 20px auto;
+  //flex-direction: raw;
+  justify-content: center;
+  align-items: strech;
+  //flex-wrap: wrap;
+  align-content: strech;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+.bl {
+  //width: 250px;
+  //flex-basis: 100px;
+  //flex-grow: 1;
+  //flex-shrink: 0;
+  flex: 1 1 300px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+h3 {
+  color: #406cd0;
+  margin: 0 10px 0 0;
+  font-size: 1.1em;
+}
+a.button {
+  background: #406cd0;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: 0.3s;
+  &:hover{
+    background: #c70000;
+  }
+}
+.image {
+  margin: 10px;
+  flex: 1 1 200px;
+}
+.text {
+  margin: 10px;
+  flex: 1 1 150px;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+.fl1 {
+  flex: 1 1 100%;
+
+  }
+
+.fl2 {
+ 
+
+}
+
+.fl3 {
+
+}
+
+.fl4 {
+}
+
+.fl5 {
+
+}
+
+.fl6 {
+   flex: 1 1 100%;
+}
